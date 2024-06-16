@@ -1,0 +1,8 @@
+{
+  "label": "MPC算法",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "主要还是针对四舵轮模型进行的算法与仿真。"
+  }
+}
