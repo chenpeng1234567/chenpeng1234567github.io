@@ -58,7 +58,6 @@ PROTO abc//把这里填写与你proto相同的名字和wbt的名字 [
 
 ![](./img/4.png)
 
-
 ![](https://crp.top/img/20200605163136.png)
 
 # 2，2022b版本以后的导入
