@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/xiaoxiong.ico',//图标
 
   // 设置网站的url
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://crp30.top',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
