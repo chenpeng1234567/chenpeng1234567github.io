@@ -17,15 +17,15 @@ sidebar_position: 1
 # 1，利用代码实现高低版本模型的导入导出
 在我们使用webots的过程中，我们可能会去下载他人的webots模型，这时就涉及到了高低版本的导入导出问题。首先，讲一下webots user guide中的Tutorial 7中的First PROTO，这个主要教我们如何建立自己的节点，这个就是可以把我们创作过的一些模型啊，假如你要在其他世界使用，就可以导出这个模型，先在是以2022b之前的版本为例，当然，高版本也是支持的。
 
-![1](E:\my-website\docs\webots\img\1.png)
+![](./img/1.png)
 
 在你建立好的robot右键
 
-![2](E:\my-website\docs\webots\img\2.png)
+![](./img/2.png)
 
 我这个是高版本的，低版本应该可以导出wbt文件，导出这个文件之后，我们可以把这个文件放入到你想要导入的世界的project中的protos文件中，之后你就可以点击新增，在proto nodes（current project）文件中找到这个。
 
-![3](E:\my-website\docs\webots\img\3.png)
+![](./img/3.png)
 
 这个说完了以后，下面就是代码的做法
 
@@ -56,7 +56,10 @@ PROTO abc//把这里填写与你proto相同的名字和wbt的名字 [
 
 之后，你可以把一个高版本的世界通过vscode打开，也就是.wbt文件通过vscode打开，这时，你会发现是一段代码，这段代码是VRML语言写的，然后根据你的需要可以把高版本的世界里面的robot，依照上面的格式一点点复制进去。最后，你就可以在低版本中打开这个模型机器人。
 
-![](https://img-blog.csdnimg.cn/direct/fc18576471e44de38ac74ba0efba80b4.png)
+![](./img/4.png)
+
+
+![](https://crp.top/img/20200605163136.png)
 
 # 2，2022b版本以后的导入
 这里我后面再添加，可以看看我好兄弟的视频
