@@ -64,7 +64,7 @@ npm run build
 
 你要创建一个上传的文件夹，把你网站里的文件复制进去，node_modules文件可以不需要。
 
-![ ](.\6.png)
+![ ](.\img\6.png)
 
 你把这些changes都commit to main上去，最后是第三步，在github desktop上有Fetch origin，你点击一下，这样你的网站文件就上传到GitHub上了。
 
