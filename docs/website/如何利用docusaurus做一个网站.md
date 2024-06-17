@@ -1,3 +1,9 @@
+---
+id: docusaurus做一个网站
+title: docusaurus做一个网站
+sidebar_position: 1
+---
+
 # 如何利用docusaurus做一个网站
 
 ### 1，首先你需要打开docusaurus网站[Docusaurus 中文网 (nodejs.cn)](https://docusaurus.nodejs.cn/)
