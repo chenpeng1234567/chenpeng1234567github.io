@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Xiao Peng Home',
   tagline: '欢迎参观，这里有你想知道的一切！',
-  favicon: 'img/xiaoxiong.ico',//图标
+  favicon: 'img/favicon.ico',//图标
 
   // 设置网站的url
   url: 'https://crp30.top',
