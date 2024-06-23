@@ -147,11 +147,18 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Rupeng Chen, Inc. Built with Docusaurus.`,
       },
+      giscus: {
+        repo: 'chenpeng1234567/chenpeng1234567github.io',
+        repoId: 'R_kgDOMJ-HmQ',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOMJ-Hmc4CgTxy'
+      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
     }),
+  clientModules: [require.resolve('./src/clientModules/routeModules.ts')]
 };
 
 export default config;
