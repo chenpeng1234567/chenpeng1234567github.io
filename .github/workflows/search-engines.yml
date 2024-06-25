@@ -10,7 +10,7 @@ jobs:
       - name: search-engines-urls-push
         id: search-engines-urls-push
         # 使用最新的版本
-        uses: chenpeng1234567/search-engines-urls-push@v0.2.2
+        uses: 3Alan/search-engines-urls-push@v0.2.2
         with:
           site: ${{ secrets.SITE }}
           sitemap: ${{ secrets.SITEMAP }}
