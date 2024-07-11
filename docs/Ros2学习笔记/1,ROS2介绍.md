@@ -4,9 +4,7 @@ title: ROS2介绍
 sidebar_position: 1
 ---
 
-视频连接：https://www.bilibili.com/video/BV1gr4y1Q7j5?p=1&vd_source=372e65dcafcd24fd43faf6d855023be1
-
-Robot Operating System
+Ros：Robot Operating System
 
 功能：简化在各种机器人平台上创建复杂而强大机器人行为的任务即不重复造轮子
 
@@ -60,8 +58,7 @@ ROS2游戏照妖镜
 Ctrl+Alt+T打开终端,输入下面的指令
 
 ```
-ros2 run image_tools cam2imageCopy to clipboardErrorCopied
-```
+ros2 run image_tools cam2image
 
 ## [**启动rqt**](https://fishros.com/d2lros2foxy/#/chapt2/2.4动手玩ROS2?id=_32-启动rqt)
 
@@ -83,3 +80,58 @@ https://fishros.org.cn/forum/topic/1274/vscode国内下载地址?lang=zh-CN
 code ./
 ```
 
+# 2,ROS2节点
+
+四种通信方式
+
+话题-topics
+
+服务-services
+
+动作-action
+
+参数-parameters
+
+运行一个节点
+
+```jsx
+ros2 run <package_name> <executable_name>
+```
+
+样例
+
+```jsx
+ros2 run turtlesim turtlesim_node
+```
+
+### ros2命令行
+
+CLI命令行界面
+
+GUI图形用户界面
+
+查看节点列表
+
+```jsx
+ros2 node list
+```
+
+查看节点信息
+
+```jsx
+ros2 node info <node_name>
+```
+
+重映射节点名称
+
+```jsx
+ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle
+```
+
+运行节点时设置参数
+
+```jsx
+ros2 run example_parameters_rclcpp parameters_basic --ros-args -p rcl_log_level:=10
+```
+
+• ROS2命令行工具源码;[**ros2/ros2cli: ROS 2 command line interface tools (github.com)**](https://github.com/ros2/ros2cli)
