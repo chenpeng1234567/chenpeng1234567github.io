@@ -65,7 +65,7 @@ ros2 run image_tools cam2image
 Ctrl+Alt+T打开终端,输入下面的指令
 
 ```
-rqtCopy to clipboardErrorCopied
+rqt 
 ```
 
 将Image View下面的复选框选中/image
