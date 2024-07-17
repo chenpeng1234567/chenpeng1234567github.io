@@ -135,3 +135,6 @@ ros2 run example_parameters_rclcpp parameters_basic --ros-args -p rcl_log_level:
 ```
 
 • ROS2命令行工具源码;[**ros2/ros2cli: ROS 2 command line interface tools (github.com)**](https://github.com/ros2/ros2cli)
+
+##参考与致谢
+- [【鱼香ROS】动手学ROS2|ROS2基础入门到实践教程|小鱼带你手把手学习ROS2](https://www.bilibili.com/video/BV1gr4y1Q7j5/?spm_id_from=333.337.search-card.all.click&vd_source=372e65dcafcd24fd43faf6d855023be1)
