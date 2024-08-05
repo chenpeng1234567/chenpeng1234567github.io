@@ -1,6 +1,6 @@
 ---
-id: 模型预测控制-MPC
-title: 模型预测控制-MPC
+id: 模型预测控制MPC
+title: 模型预测控制MPC
 sidebar_position: 1
 ---
 
@@ -11,33 +11,39 @@ Optimal Control：Get the best performace within certain limitation
 在约束条件下达到最优的系统表现
 
 目标/代价函数  objective/cost function
+
 $$
-J = \int_{0}^{t}qe^2+ru^2\,dt\qquad
+J = \int_0^{t}qe^2+ru^2\,dt
 $$
+
 使代价函数达到最小值minJ，
+
 $$
-\int_{0}^{t}e^2\,dt\qquad
+\int_0^{t}e^2\,dt
 $$
+
 越小，追踪越好。
+
 $$
-\int_{0}^{t}=u^2\,dt\qquad
+\int_0^{t}=u^2\,dt
 $$
+
 越小，输入越小。
 
 q>>r，看重误差          r>>q，看重输入
 
 ![mpc-20](https://crpimg.oss-cn-wuhan-lr.aliyuncs.com/img/202408051255303.jpg)
 
-
-
 # MPC：模型预测
 
 通过模型来预测系统在某一未来时间段内的表现来进行优化控制。
 
 多用于数位控制，离散型状态空间表达。
+
 $$
 X_{k+1}=AX_{k}+BU_{k}
 $$
+
 ![mpc-21](https://crpimg.oss-cn-wuhan-lr.aliyuncs.com/img/202408051255037.jpg)
 
 ![mpc-22](https://crpimg.oss-cn-wuhan-lr.aliyuncs.com/img/202408051255809.jpg)
@@ -46,11 +52,9 @@ $$
 
 ![mpc-25](https://crpimg.oss-cn-wuhan-lr.aliyuncs.com/img/202408051256888.png)
 
-
-
 ## octave代码
 
-# MPC_Test.m
+### MPC_Test.m
 
 ```matlab
 %% 清屏
@@ -113,7 +117,9 @@ end
 legend("u1","u2")
 ```
 
-# MPC_Matrices.m
+
+
+### MPC_Matrices.m
 
 ```matlab
 function  [E , H]=MPC_Matrices(A,B,Q,R,F,N)
@@ -146,7 +152,9 @@ H=C'*Q_bar*C+R_bar; % NP x NP
 end 
 ```
 
-# Prediction.m
+
+
+### Prediction.m
 
 ```matlab
 function u_k= Prediction(x_k,E,H,N,p)
@@ -156,11 +164,11 @@ u_k = U_k(1:p,1); % 取第一个结果
 end 
 ```
 
-
-
 ## MATLAB代码
 
-## MPC_Test.m
+
+
+### MPC_Test.m
 
 ```matlab
 % 清屏
@@ -199,12 +207,14 @@ for k = 1 : k_steps
     % 计算第k+1步时状态变量的值
     X_K(:,k+1) = (A*X_K(:,k) + B*U_K(:,k));
 end
+
 % 绘制状态变量和输入的变化
 subplot(2, 1, 1);
 hold;
 for i = 1 : size(X_K,1)
     plot(X_K(i,:));
 end
+
 legend("x1","x2")
 hold off;
 subplot(2, 1, 2);
@@ -216,7 +226,7 @@ end
 
 
 
-## MPC_Matrices.m
+### MPC_Matrices.m
 
 ```matlab
 function [E,H] = MPC_Matrices(A,B,Q,R,F,N)
@@ -246,7 +256,7 @@ function [E,H] = MPC_Matrices(A,B,Q,R,F,N)
 
 
 
-## Prediction.m
+### Prediction.m
 
 ```matlab
 function u_k= Prediction(x_k,E,H,N,p)
@@ -255,8 +265,6 @@ function u_k= Prediction(x_k,E,H,N,p)
     u_k = U_k(1:p,1); % 取第一个结果
 end 
 ```
-
-
 
 ## 参考与致谢
 
