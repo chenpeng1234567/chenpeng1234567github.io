@@ -1,8 +1,8 @@
 ---
+id: 模型预测控制-MPC
+title: 模型预测控制-MPC
 sidebar_position: 1
 ---
-
-# 模型预测控制-MPC
 
 摘要：这篇文章讲的是MPC二次规划问题的求解推导，深入了解二次规划问题MPC求解过程，深入了解每一个变量对最后结果的影响，可以根据改变变量，来达到自己所想要的效果，在文章后文中附带了MATLAB与Octave的代码，可以让你能够通过改变变量，来了解曲线的变化过程。
 
@@ -50,7 +50,7 @@ $$
 
 ## octave代码
 
-MPC_Test.m
+# MPC_Test.m
 
 ```matlab
 %% 清屏
@@ -113,7 +113,7 @@ end
 legend("u1","u2")
 ```
 
-MPC_Matrices.m
+# MPC_Matrices.m
 
 ```matlab
 function  [E , H]=MPC_Matrices(A,B,Q,R,F,N)
@@ -146,7 +146,7 @@ H=C'*Q_bar*C+R_bar; % NP x NP
 end 
 ```
 
-Prediction.m
+# Prediction.m
 
 ```matlab
 function u_k= Prediction(x_k,E,H,N,p)
@@ -158,10 +158,11 @@ end
 
 
 
-## MATLAB代码：
+## MATLAB代码
 
-```
-MPC_Test.m
+## MPC_Test.m
+
+```matlab
 % 清屏
 clear;
 close all;
@@ -211,7 +212,13 @@ hold;
 for i = 1 : size(U_K,1)
     plot(U_K(i,:));
 end
-MPC_Matrices.m
+```
+
+
+
+## MPC_Matrices.m
+
+```matlab
 function [E,H] = MPC_Matrices(A,B,Q,R,F,N)
     n=size(A,1); % A是n*n矩阵,得到n
     p=size(B,2); % B是n*p矩阵,得到p
@@ -235,7 +242,13 @@ function [E,H] = MPC_Matrices(A,B,Q,R,F,N)
     G=M'*Q_bar*M; % G: n*n
     E=C'*Q_bar*M; % E: NP*n
     H=C'*Q_bar*C+R_bar; % NP*NP
-Prediction.m
+```
+
+
+
+## Prediction.m
+
+```matlab
 function u_k= Prediction(x_k,E,H,N,p)
     U_k = zeros(N*p,1); % NP x 1
     U_k = quadprog(H,E*x_k);
