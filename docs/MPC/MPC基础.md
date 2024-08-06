@@ -1,4 +1,8 @@
-# MPC基础
+---
+id: MPC基础
+title: MPC基础
+sidebar_position: 2
+---
 
 ## 模型预测控制（Model Predictive control,MPC）
 
