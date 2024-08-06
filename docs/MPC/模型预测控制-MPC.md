@@ -4,7 +4,7 @@ title: 模型预测控制MPC
 sidebar_position: 1
 ---
 
-摘要：这篇文章讲的是MPC二次规划问题的求解推导，深入了解二次规划问题MPC求解过程，深入了解每一个变量对最后结果的影响，可以根据改变变量，来达到自己所想要的效果，在文章后文中附带了MATLAB与Octave的代码，可以让你能够通过改变变量，来了解曲线的变化过程。
+摘要：这篇文章讲的是MPC二次规划问题与无约束调节问题推导，深入了解二次规划问题MPC无约束调节问题，深入了解每一个变量对最后结果的影响，可以根据改变变量，来达到自己所想要的效果，在文章后文中附带了MATLAB与Octave的代码，可以让你能够通过改变变量，来了解曲线的变化过程。
 
 Optimal Control：Get the best performace within certain limitation
 
