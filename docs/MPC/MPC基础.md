@@ -33,9 +33,11 @@ $$
 ## 二次规划问题（quadratic programming,QP）
 
 标准形式：
+
 $$
 min_{u}J=\frac1 2U^THU+U^Tf
 $$
+
 约束条件：
 $$
 \begin{cases}
