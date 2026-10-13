@@ -10,15 +10,15 @@ sidebar_position: 2
 
 如果你已有GitHub账号，那就直接新建一个New repository。
 
-![ ](.\img\1.png)
+![ ](./img/1.png)
 
 然后，在Name里面输入名字，最好是yougithubname+github.io
 
-![ ](.\img\2.png)
+![ ](./img/2.png)
 
 其他的不用管，建议添加一个readme
 
-![ ](.\img\3.png)
+![ ](./img/3.png)
 
 直接点击创建，然后你GitHub会有一个空白的repository
 
@@ -54,17 +54,17 @@ npm run build
 
 这个软件安装包exe文件是直接确定路径，所以打开exe文件就可以用。
 
-![ ](.\img\4.png)
+![ ](./img/4.png)
 
 点击clone repository
 
 选中你刚刚新建的repository
 
-![ ](.\img\5.png)
+![ ](./img/5.png)
 
 你要创建一个上传的文件夹，把你网站里的文件复制进去，node_modules文件可以不需要。
 
-![ ](.\img\6.png)
+![ ](./img/6.png)
 
 你把这些changes都commit to main上去，最后是第三步，在github desktop上有Fetch origin，你点击一下，这样你的网站文件就上传到GitHub上了。
 
