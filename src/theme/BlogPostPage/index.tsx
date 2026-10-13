@@ -8,8 +8,7 @@ import {
 import {
   BlogPostProvider,
   useBlogPost
-  // @ts-ignore
-} from '@docusaurus/theme-common/internal';
+} from '@docusaurus/plugin-content-blog/client';
 import BlogLayout from '@theme/BlogLayout';
 import BlogPostItem from '@theme/BlogPostItem';
 import BlogPostPaginator from '@theme/BlogPostPaginator';

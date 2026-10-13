@@ -1,0 +1,9 @@
+{
+  "homepage.tagline": {"message": "Welcome! Discover what you want to know here."},
+  "homepage.embedded.title": {"message": "Embedded Systems Engineer"},
+  "homepage.embedded.description": {"message": "I have taken part in a few competitions and know a little about STM32. I also know some C, Python, and C++, and learn more as I need them."},
+  "homepage.vision.title": {"message": "Computer Vision Beginner"},
+  "homepage.vision.description": {"message": "I am currently working on computer vision and still learning. My main interests include SLAM, mapping, and localization."},
+  "homepage.opensource.title": {"message": "Open Source Enthusiast"},
+  "homepage.opensource.description": {"message": "I actively participate in the open source community and contribute code to open source projects. I hope to build a well-known open source project someday."}
+}

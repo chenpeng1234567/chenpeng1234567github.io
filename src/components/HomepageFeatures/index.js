@@ -1,36 +1,37 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import Translate from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '嵌入式工程师',
+    title: <Translate id="homepage.embedded.title">嵌入式工程师</Translate>,
     Svg: require('@site/static/svg/undraw_open_source.svg').default,
     description: (
-      <>
+      <Translate id="homepage.embedded.description">
         参加过一点点比赛，对STM32有点了解，但不多。
         会点C语言，Python，C++但不多。主要要用的时候才学。
-      </>
+      </Translate>
     ),
   },
   {
-    title: '视觉初学者',
+    title: <Translate id="homepage.vision.title">视觉初学者</Translate>,
     Svg: require('@site/static/svg/undraw_spider.svg').default,
     description: (
-      <>
+      <Translate id="homepage.vision.description">
         现在正在做视觉方面的工作，不是很会。
         主要学SLAM，建图，定位之类的杂事。
-      </>
+      </Translate>
     ),
   },
   {
-    title: '开源爱好者',
+    title: <Translate id="homepage.opensource.title">开源爱好者</Translate>,
     Svg: require('@site/static/svg/undraw_web_developer.svg').default,
     description: (
-      <>
+      <Translate id="homepage.opensource.description">
         作为一名开源爱好者，积极参与开源社区，
         为开源项目贡献代码，希望有生之年能够构建出一个知名的开源项目。
-      </>
+      </Translate>
     ),
   },
 ];

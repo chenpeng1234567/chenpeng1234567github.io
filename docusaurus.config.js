@@ -26,14 +26,20 @@ const config = {
   projectName: 'Crpjyb', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {onBrokenMarkdownLinks: 'warn'},
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-CN',
-    locales: ['zh-CN'],
+    locales: ['zh-CN', 'en'],
+    localeConfigs: {
+      'zh-CN': {label: '中文'},
+      en: {label: 'English'},
+    },
   },
 
   themes: [
@@ -104,6 +110,7 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {type: 'localeDropdown', position: 'right'},
         ],
       },
       footer: {

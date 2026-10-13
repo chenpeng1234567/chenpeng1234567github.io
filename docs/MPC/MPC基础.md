@@ -57,3 +57,5 @@ f:n*1向量，LB代表下限（lower bound），UB代表上限（upper bound）�
 1. 无约束情况解析解
 2. 等式约束--拉格朗日乘数法
 3. 不等式约束--数值法与现代作图工具
+
+> 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。

@@ -269,3 +269,5 @@ end
 ## 参考与致谢
 
 DR_CAN:[【MPC模型预测控制器】1_最优化控制和基本概念_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1cL411n7KV/)
+
+> 本篇文章受 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) 协议保护，转载请注明出处。
