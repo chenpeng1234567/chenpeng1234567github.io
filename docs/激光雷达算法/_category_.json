@@ -1,0 +1,8 @@
+{
+  "label": "激光雷达算法",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "整理激光雷达点云的地面分割、聚类、过滤与配准方法，结合算法原理、参数调试和 PCL 代码讲解。"
+  }
+}

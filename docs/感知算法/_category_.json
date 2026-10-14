@@ -1,0 +1,8 @@
+{
+  "label": "感知算法",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "整理一些自动驾驶的感知算法。"
+  }
+}
