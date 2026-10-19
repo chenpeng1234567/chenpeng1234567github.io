@@ -154,7 +154,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/chenpeng1234567?tab=projects',
+                href: 'https://github.com/chenpeng1234567',
               },
             ],
           },
